@@ -1,0 +1,112 @@
+const router = require("express").Router();
+let Rate = require("../models/rate/rate.model");
+const auth = require("../middlewares/authenticate");
+let Class=require("../models/class/class.model")
+let Teacher=require("../models/teacher/teacher.model")
+router.route("/").get((req, res) => {
+    Rate.find()
+        .then(users => res.json(users))
+        .catch(err => res.status(400).json("Error: " + err));
+});
+
+router.route("/add").post((req, res) => {
+    const userId = req.body.userId;
+    const subjectId = req.body.subjectId;
+    const ratingsFirstHalf = req.body.ratingsFirstHalf;
+    const rateFirstHalf = req.body.rateFirstHalf;
+    const ratingsSecondHalf = req.body.ratingsSecondHalf;
+    const rateSecondHalf = req.body.rateSecondHalf;
+    const rateForYear = req.body.rateForYear;
+    const gradeId = req.body.gradeId;
+    const newGrade = new Rate({
+        subjectId,
+        userId,
+        ratingsFirstHalf,
+        rateFirstHalf,
+        ratingsSecondHalf,
+        rateSecondHalf,
+        rateForYear,
+        gradeId
+    });
+    newGrade
+        .save()
+        .then(() => res.json(newGrade))
+        .catch(err => {
+            res.status(400).json("Error: " + err);
+        });
+});
+
+router.route("/:id").get((req, res) => {
+    Rate.findById(req.params.id)
+        .then(grade => res.json(grade))
+        .catch(err => res.status(400).json("Error: " + err));
+});
+router.route("/subject/:subjectId/:gradeId").get((req, res) => {
+    Rate.find({subjectId:req.params.subjectId,gradeId:req.params.gradeId})
+        .then(grade =>
+            res.json(grade))
+        .catch(err => res.status(400).json("Error: " + err));
+});
+
+router.route("/user/:userId/:gradeId").get((req, res) => {
+    let grades={
+        teachers:[],
+        subjects:[],
+        rates:[]
+    }
+
+
+
+    Rate.find({userId:req.params.userId,gradeId:req.params.gradeId})
+        .then(rates => {
+                Promise.all(
+                    rates.map(rate =>
+
+                        Class.findById(rate.subjectId).then(grade => {
+                            grades.rates.push(rate);
+                            grades.subjects.push(grade);
+                        })
+                    )
+                ).then(() =>{
+
+                        Promise.all(
+                            grades.subjects.map(subject =>
+                                Teacher.findById(subject.teacherId).then((teacher) => {
+                                   grades.teachers.push(teacher)
+                                })
+                            )
+                        ).then(() =>
+                            res.json(grades))
+
+                }
+                )
+            }
+        )
+        .catch(err => res.status(400).json("Error: " + err));
+
+});
+
+router.route("/delete/:id").delete((req, res) => {
+    Rate.findByIdAndDelete(req.params.id)
+        .then(() => res.json("Grade deleted."))
+        .catch(err => res.status(400).json("Error: " + err));
+});
+
+router.route("/edit/:id").put((req, res) => {
+    Rate.findById(req.params.id)
+        .then(grade => {
+            grade.ratingsFirstHalf = req.body.ratingsFirstHalf;
+            grade.rateFirstHalf = req.body.rateFirstHalf;
+            grade.ratingsSecondHalf = req.body.ratingsSecondHalf;
+            grade.rateSecondHalf = req.body.rateSecondHalf;
+            grade.rateForYear = req.body.rateForYear;
+            grade.date = Date.parse(req.body.date);
+            grade
+                .save()
+                .then(() => res.json("grade updated!"))
+                .catch(err => res.status(400).json("Error: " + err));
+        })
+        .catch(err => res.status(400).json("Error: " + err));
+});
+
+module.exports = router;
