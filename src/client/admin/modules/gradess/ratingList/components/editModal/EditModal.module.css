@@ -1,0 +1,47 @@
+.modal_wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1050;
+
+}
+.modal_container {
+    margin: auto;
+    width: 700px;
+    min-height: 600px;
+    text-align: center;
+    border: solid 20px #343a40;
+    background: white;
+    margin-top: 200px;
+}
+.modal_close_button{
+    margin-left: 580px;
+    position: fixed;
+    padding: 20px;
+    color: red;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.modal_close_button:hover{
+    margin-left: 580px;
+    position: fixed;
+    color: red;
+    font-size: 50px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.modal_title{
+    text-align: center;
+    color: #125899;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 50px;
+}
+.modal_input{
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+}

@@ -1,0 +1,45 @@
+.sideBar{
+    color:  #3d3d3d;
+    width:  100%;
+    max-width:  300px;
+    padding:  27px 20px 33px 12px;
+    min-height:  100vh;
+    height:  100%;
+    position:  fixed;
+    top:  0;
+    left:  0;
+    vertical-align:  top;
+    display:  flex;
+    align-content:  space-between;
+    flex-direction:  column;
+    flex:  0 0 250px;
+    background:  #125899;
+}
+.sideBar_titles{
+    color: white;
+    font-size: 25px;
+}
+.sideBar_titles :hover{
+    color: red;
+    text-decoration: none;
+}
+.sideBar_titles_hover{
+    color: red;
+    text-decoration: none;
+}
+.sideBar_sub_titles{
+    padding-left: 30px;
+    color: white;
+    font-size: 20px;
+}
+.sideBar_sub_titles :hover{
+    color: red;
+    text-decoration: none;
+}
+
+.title{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    padding-left: 30px;
+}

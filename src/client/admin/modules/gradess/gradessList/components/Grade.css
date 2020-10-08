@@ -1,0 +1,127 @@
+.grade_container{
+    margin-left: 300px;
+    margin-top: 100px;
+}
+.year_grade_title{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
+    color: #125899;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+.grade_form{
+    margin: auto;
+    width: 1200px;
+}
+.grade_title{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 30px;
+    color: #125899;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.grade_number_form{
+   margin-bottom: 20px;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.grade_number{
+    cursor: pointer;
+    border: solid 2px #125899;
+    width: 150px;
+    text-align: center;
+    padding-top: 45px;
+    height: 150px;
+    border-radius:100px;
+    background: #125899;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-right: 18px;
+    margin-left: 18px;
+    margin-bottom: 40px;
+}
+.grade_number:hover{
+    cursor: pointer;
+    border: solid 2px #125899;
+    width: 150px;
+    text-align: center;
+    padding-top: 45px;
+    height: 150px;
+    border-radius: 220px;
+    background: white;
+    color: #125899;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-right: 18px;
+    margin-left: 18px;
+    margin-bottom: 40px;
+}
+.modal_wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1050;
+
+}
+.modal_container {
+    margin: auto;
+    width: 700px;
+    min-height: 600px;
+    text-align: center;
+    border: solid 20px #343a40;
+    background: white;
+    margin-top: 200px;
+}
+.modal_subGrade_title{
+    text-align: center;
+    color: #125899;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 50px;
+}
+.modal_close_button{
+    margin-left: 580px;
+    position: fixed;
+    padding: 20px;
+    color: red;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.modal_close_button:hover{
+    margin-left: 580px;
+    position: fixed;
+    color: red;
+    font-size: 50px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.modal_subGrade_form_content{
+    margin: auto;
+    width: 400px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+}
+.modal_subGrade_row{
+    border-bottom: solid 2px #125899;
+    text-decoration: none;
+    padding: 30px;
+    background: white;
+    color: #125899;
+    font-weight: bolder;
+}
+.modal_subGrade_row:hover{
+    border-bottom: solid 2px #125899;
+    text-decoration: none;
+    padding: 30px;
+    background: #125899;
+    color: white;
+}
+

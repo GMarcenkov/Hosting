@@ -1,0 +1,11 @@
+.table_head tr th{
+    padding: 9px 16px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 0.25px;
+    color: rgba(#323232,50%);
+    font-family: neue-haas-unica, sans-serif;
+    background: #f6f9ff;
+    text-transform: uppercase;
+}

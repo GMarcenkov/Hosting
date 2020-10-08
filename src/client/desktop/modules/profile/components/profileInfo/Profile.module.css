@@ -1,0 +1,25 @@
+.user_icon {
+  font-size: 300px;
+  color: #125899;
+  margin-right: 100px;
+}
+.profile_container {
+  display: flex;
+}
+.user_name_container {
+  display: flex;
+}
+.user_names {
+  font-size: 30px;
+  color: #125899;
+  margin-right: 20px;
+}
+.user_info_container {
+  margin-top: 30px;
+}
+.user_communication {
+  margin-top: 20px;
+}
+.user_label {
+  font-size: 20px;
+}

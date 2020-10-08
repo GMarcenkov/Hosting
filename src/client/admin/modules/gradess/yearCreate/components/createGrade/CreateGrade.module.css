@@ -1,0 +1,87 @@
+.input_container{
+    display: flex;
+    margin-top: 60px;
+}
+.input_title{
+font-size: 25px;
+    margin-bottom: 10px;
+}
+.input_content{
+    width:130px;
+    height: 40px;
+    font-size:25px;
+    margin-right: 40px;
+}
+.teacher_input{
+    width:400px;
+    height: 40px;
+    margin-right: 40px;
+    font-size:25px;
+}
+.add_grade{
+    padding: 20px;
+    font-size: 30px;
+    background: lime;
+    font-weight: bolder;
+    color: white;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 300px;
+}
+.add_grade:hover{
+    padding: 20px;
+    font-size: 30px;
+    background: limegreen;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 300px;
+}
+.button_add_container{
+   margin: auto;
+    width:200px;
+}
+.button_edit_form{
+    display: flex;
+}
+.edit_grade{
+    font-size: 30px;
+    padding: 20px;
+    margin:40px;
+    background: lime;
+    color: white;
+    font-weight: bolder;
+}
+.edit_grade:hover{
+    font-size: 30px;
+    padding: 20px;
+    margin:40px;
+    color: white;
+    font-weight: bolder;
+    background: limegreen;
+}
+.delete_grade{
+    font-size: 30px;
+    padding: 20px;
+    margin:40px;
+    color: white;
+    background: red;
+    font-weight: bolder;
+}
+.delete_grade:hover{
+    font-size: 30px;
+    padding: 20px;
+    margin:40px;
+    color: white;
+    background: darkred;
+    font-weight: bolder;
+}
+.error{
+    color: red;
+    font-size: 25px;
+    text-align: center;
+}

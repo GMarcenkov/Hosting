@@ -1,0 +1,28 @@
+.category_wrapper {
+  margin-left: 400px;
+}
+.category_holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container_categories {
+  padding: 50px 20px;
+  overflow: hidden;
+  max-width: 360px;
+  min-width: 550px;
+  width: 100%;
+  border-right: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  min-height: 100vh;
+}
+.container_category {
+  background-color: #282c34;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  vertical-align: top;
+  display: flex;
+  align-content: space-between;
+  flex-direction: column;
+}

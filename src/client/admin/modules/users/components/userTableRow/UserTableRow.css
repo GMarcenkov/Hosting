@@ -1,0 +1,27 @@
+td{
+    padding: 13px 0px;
+    font-size:  20px;
+    line-height:  1.29;
+    vertical-align:  middle;
+    text-align:  left;
+    letter-spacing:  normal;
+    font-family:  neue-haas-unica, sans-serif ;
+}
+.delete_user{
+    color:red;
+    margin-right: 30px;
+    cursor: pointer
+}
+.edit_user{
+    color: orange;
+    cursor: pointer
+}
+.username{
+    width:200px
+}
+.date{
+    width:300px
+}
+.action{
+    width:200px
+}

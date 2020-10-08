@@ -1,0 +1,33 @@
+.grades_title{
+    font-size: 25px;
+    color: #125899;
+    font-weight: bold;
+}
+.school_level{
+    margin-top: 40px;
+}
+.grade_level{
+    margin-left:20px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.list_row{
+    border: solid 2px #125899;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    color: #125899;
+    font-weight: bold;
+}
+.list_row:hover{
+    border: solid 2px #125899;
+    text-align: center;
+    background-color: #125899;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+}
+.edit_icon{
+    font-size: 20px;
+    cursor: pointer;
+}

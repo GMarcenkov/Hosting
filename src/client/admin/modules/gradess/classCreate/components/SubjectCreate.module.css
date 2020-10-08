@@ -1,0 +1,172 @@
+.subject_container {
+    margin-left:300px;
+  margin-top: 100px;
+}
+.subject_holder {
+  margin: auto;
+  width: 900px;
+}
+.subject_row{
+  display: flex;
+  margin-top: 50px;
+}
+
+.select_year{
+  margin-right: 80px;
+  font-size: 25px;
+}
+.select_grade{
+  margin-right: 30px;
+  font-size: 25px;
+}
+.select_subGrade{
+  font-size: 25px;
+  width: 50px;
+  margin-right: 100px;
+}
+.select_label{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.title{
+  font-size: 40px;
+  color: #125899;
+  font-weight: bolder;
+  text-align: center;
+}
+.select_subject{
+  font-size: 25px;
+  min-width: 270px;
+}
+.select_teacher{
+  font-size: 25px;
+  min-width: 400px;
+}
+
+.create_class:hover{
+  background: white;
+  color: #125899;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 100px;
+  margin-top: 10px;
+  padding:20px 70px 20px 70px;
+  border-radius: 20px;
+  border: #125899 solid 2px;
+}
+.create_class{
+  background: #125899;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 100px;
+  margin-top: 10px;
+  padding:20px 70px 20px 70px ;
+  border-radius: 20px;
+}
+
+
+
+
+.create_product {
+  padding-left: 700px;
+  padding-top: 200px;
+}
+.create_title {
+  font-size: 25px;
+  padding-right: 360px;
+}
+.form_row {
+  padding-bottom: 60px;
+}
+
+.year_split {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 40px;
+}
+.form_search {
+  margin-top: 30px;
+}
+.search_row {
+  border: solid 2px #125899;
+  text-align: center;
+  background-color: white;
+  border-radius: 12px;
+  color: #125899;
+  font-weight: bold;
+}
+.search_row:hover {
+  text-align: center;
+  background-color: #125899;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+}
+.stu_add {
+  text-align: center;
+  font-weight: bold;
+  background: lime;
+  color: white;
+  border-radius: 12px;
+}
+.text_year {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.form_class {
+  margin-left: 60px;
+  margin-top: 22px;
+}
+.input_class {
+  width: 130px;
+  height: 40px;
+  font-size: 25px;
+}
+.form_filter {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.form_body {
+  margin-right: 40px;
+}
+.form_addStu {
+  font-size: 20px;
+  margin-right: 30px;
+  width: 400px;
+}
+.form_input {
+  font-size: 25px;
+}
+.form_year {
+  font-size: 25px;
+  width: 100px;
+}
+.create_button {
+  font-weight: bold;
+  background: lime;
+  color: white;
+  font-size: 25px;
+  margin-left: 220px;
+  margin-top: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.create_button:hover {
+  background: limegreen;
+  color: white;
+  font-size: 25px;
+  margin-left: 220px;
+  margin-top: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.loader{
+  margin-left: 300px;
+  height: 100vh;
+  width: 80%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}

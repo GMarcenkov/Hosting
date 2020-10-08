@@ -1,0 +1,17 @@
+.createProduct {
+}
+
+.createProduct a {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  margin: 50px;
+  background-color: #007bff;
+  font-size: 25px;
+  color: #f6f9ff;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.createProduct a:hover {
+  background-color: greenyellow;
+}

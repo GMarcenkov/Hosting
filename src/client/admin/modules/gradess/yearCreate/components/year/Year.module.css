@@ -1,0 +1,36 @@
+.form_year {
+  font-size: 25px;
+  width: 100px;
+}
+.year_split {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 40px;
+}
+.year_container {
+  display: flex;
+  margin: auto;
+  width: 700px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.button_create_year {
+  padding: 30px;
+  margin-right: 50px;
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  background: #125899;
+  border: solid 2px #125899;
+  border-radius: 30px;
+}
+.button_create_year:hover {
+  padding: 30px;
+  font-size: 30px;
+  font-weigh: bolder;
+  color: #125899;
+  background: white;
+  border: solid 2px #125899;
+  border-radius: 30px;
+}

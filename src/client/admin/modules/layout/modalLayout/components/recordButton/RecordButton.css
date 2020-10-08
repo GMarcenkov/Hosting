@@ -1,0 +1,15 @@
+.button_style{
+    font-size: 200%;
+    background-color: chartreuse;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.button_style:hover{
+    font-size: 200%;
+    background-color: limegreen;
+    border: none;
+    color: white;
+    font-weight: bold;
+}

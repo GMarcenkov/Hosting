@@ -1,0 +1,47 @@
+.search_container{
+    display: flex;
+}
+.search_form{
+    margin-top: 50px;
+}
+.input_content{
+    margin-right:30px;
+    font-size: 30px;
+
+}
+.input_title{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.checkBox{
+    font-size: 20px;
+}
+.checkBox_title{
+    margin-left:10px;
+    cursor: pointer;
+}
+.search_row{
+    border: solid 2px #125899;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    color: #125899;
+    font-weight: bold;
+}
+.search_row:hover{
+    text-align: center;
+    background-color: #125899;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+}
+.stu_add{
+    text-align: center;
+    font-weight: bold;
+    background: lime;
+    color: white;
+    border-radius: 12px;
+}
+.students_container{
+    margin-top: 50px;
+}

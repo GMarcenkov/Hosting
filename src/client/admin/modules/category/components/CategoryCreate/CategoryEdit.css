@@ -1,0 +1,38 @@
+.parent_input {
+  padding-top: 100px;
+  padding-right: 200px;
+    font-size: 20px;
+    margin-left: 90px;
+}
+.title_input {
+    font-size: 20px;
+  padding-right: 340px;
+
+}
+.label_title_input{
+    color: white;
+    margin-left: 90px;
+    padding-top: 30px;
+}
+.category_edit{
+    background-color: #125899;
+    margin-top: 70px;
+    margin-left: 300px;
+    color: white;
+    border: none;
+    padding: 10px 80px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 150%;
+}
+.category_edit:hover{
+    background-color: white;
+    margin-top: 70px;
+    margin-left: 300px;
+    font-size: 150%;
+    color: #125899;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 80px;
+    font-weight: bold;
+}

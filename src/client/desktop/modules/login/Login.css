@@ -1,0 +1,69 @@
+.form {
+    background-color: white;
+    min-height: 100vh;
+    display: flow;
+    color: white;
+}
+.submit{
+    border: solid 2px #125899;
+    text-align: center;
+    font-size: 200%;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    width: 300px;
+    border-radius: 12px;
+    color: #125899;
+    font-weight: bold;
+    margin-top: 100px;
+ }
+.submit:hover{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 200%;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #125899;
+    width: 300px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.login{
+    border-top: solid 2px #125899;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    margin: auto;
+    width: 800px;
+
+}
+.label_password{
+    margin-top: 30px;
+    color: #125899;
+    padding-right:200px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 200%;
+}
+.label_username{
+    color: #125899;
+    padding-right:250px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 200%;
+}
+.input_form{
+    font-size: 150%;
+}
+.logo{
+    color: #125899;
+    margin:auto;
+    width: 900px;
+    font-size: 70px;
+    font-weight: bolder;
+    text-shadow: 8px 2px 9px rgb(18, 88, 153);
+}
+

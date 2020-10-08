@@ -1,0 +1,12 @@
+.close_modal {
+    opacity: 0.8;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    cursor: pointer;
+    float: right ;
+}
+
+
