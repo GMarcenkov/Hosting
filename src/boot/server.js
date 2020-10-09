@@ -73,9 +73,10 @@ module.exports = {
     },
     load: () => {
         return new Promise(resolve => {
-            let server = app.listen(env.vars.SERVER_PORT, () => {
+            let server = app.listen(`${process.env.SERVER_PORT}`, () => {
                 return resolve(app);
             });
+
             mongoose.connect(process.env.ATLAS_URI, {
                 useNewUrlParser: true,
                 useCreateIndex: true,
