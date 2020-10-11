@@ -49,7 +49,7 @@ app.use("/.netlify/functions/api/v1/subject",subjectRouter);
 const classRouter=require("../routes/subjectClass");
 app.use("/.netlify/functions/api/v1/class",classRouter);
 const authentication = require("../routes/authentication");
-app.use("/.netlify/functions/api/users/api/v1/auth", authentication);
+app.use("/.netlify/functions/api/v1/auth", authentication);
 const schoolYearRouter = require("../routes/schoolYear");
 app.use("/.netlify/functions/api/v1/schoolYears", schoolYearRouter);
 const categoryRouter = require("../routes/category");
