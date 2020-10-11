@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a006cdaf-cc6a-449b-99f7-e78ccaa2e9e2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/boot/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/boot/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gerb.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/gerb.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mitropolit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/serviceWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +55,7 @@
       <workItem from="1602322856351" duration="99000" />
       <workItem from="1602342560495" duration="20000" />
       <workItem from="1602403785389" duration="334000" />
+      <workItem from="1602446476181" duration="1851000" />
     </task>
     <servers />
   </component>
@@ -73,5 +67,21 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1602342577409" />
+    <state width="1830" height="248" key="GridCell.Tab.0.bottom" timestamp="1602448327711">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="248" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1602448327711" />
+    <state width="1830" height="248" key="GridCell.Tab.0.center" timestamp="1602448327709">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="248" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1602448327709" />
+    <state width="1830" height="248" key="GridCell.Tab.0.left" timestamp="1602448327708">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="248" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1602448327708" />
+    <state width="1830" height="248" key="GridCell.Tab.0.right" timestamp="1602448327710">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="248" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1602448327710" />
   </component>
 </project>
