@@ -1,73 +1,27 @@
 {
-  "name": "ipon-web-school",
+  "name": "reactexpress",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
-  "author": "",
-  "license": "ISC",
-  "private": true,
+  "description": "Starter kit for creating React and Express apps",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node  server.js",
+    "server": " nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Brad Traversy",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.14.6"
+  },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.28",
-    "@fortawesome/free-solid-svg-icons": "^5.13.0",
-    "@fortawesome/react-fontawesome": "^0.1.9",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "axios": "^0.19.2",
-    "bcrypt": "^4.0.1",
-    "body-parser": "^1.19.0",
-    "bootstrap": "^4.4.1",
-    "concurrently": "^5.2.0",
-    "cookie-parser": "^1.4.5",
+    "concurrently": "^3.5.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "ejs": "^3.1.5",
-    "eslint": "^6.8.0",
-    "express": "^4.17.1",
-    "helmet": "^4.1.1",
+    "express": "^4.16.2",
+    "fontawesome": "^5.6.3",
     "jsonwebtoken": "^8.5.1",
-    "jwt-decode": "^2.2.0",
-    "maxmind": "^4.3.0",
-    "mongoose": "^5.9.5",
-    "multer": "^1.4.2",
-    "mysql2": "^2.2.5",
-    "prettier": "^1.19.1",
-    "react": "^16.13.0",
-    "react-bootstrap": "^1.0.0-beta.17",
-    "react-dom": "^16.13.0",
-    "react-fontawesome": "^1.7.1",
-    "react-loader-spinner": "^3.1.14",
-    "react-loading": "^2.0.3",
-    "react-modal": "^3.11.2",
-    "react-scripts": "3.4.0",
-    "react-select": "^3.1.0",
-    "react-timestamp": "^5.1.0",
-    "redist": "^0.2.0",
-    "slugify": "^1.4.0",
-    "striptags": "^3.1.1",
-    "styl": "^0.2.9",
-    "stylus": "^0.54.7"
-  },
-  "scripts": {
-    "start": "nodemon src/index.js ",
-    "build": "react-scripts build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "react-router-dom": "^5.2.0"
+    "mongoose": "^5.10.9"
   }
 }
