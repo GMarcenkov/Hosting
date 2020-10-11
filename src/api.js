@@ -35,7 +35,7 @@ if (process.env.NODE_ENV === 'production') {
 
 app.use(morgan('tiny'));
 const usersRouter = require("../routes/users");
-app.use("/.netlify/functions/api/users", usersRouter);
+app.use("/.netlify/functions/api/v1/users", usersRouter);
 const teacherRouter=require("../routes/teacher");
 app.use("/.netlify/functions/api/v1/teacher",teacherRouter);
 const gradeRouter=require("../routes/grade");
@@ -53,7 +53,7 @@ app.use("/.netlify/functions/api/v1/auth", authentication);
 const schoolYearRouter = require("../routes/schoolYear");
 app.use("/.netlify/functions/api/v1/schoolYears", schoolYearRouter);
 const categoryRouter = require("../routes/category");
-app.use("/.netlify/functions/api/category", categoryRouter);
+app.use("/.netlify/functions/api/v1/category", categoryRouter);
 
 
 module.exports = app;
