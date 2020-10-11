@@ -1,48 +1,40 @@
-const express = require("express");
-const cors = require("cors");
-const mongoose = require("mongoose");
-require("dotenv").config();
+// Import npm packages
+const express = require('express');
+const mongoose = require('mongoose');
+const morgan = require('morgan');
+const path = require('path');
 
 const app = express();
+const PORT = process.env.PORT || 8080; // Step 1
 
-app.use(cors());
+const routes = require('./routes/api');
+
+// Step 2
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/mern_youtube', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+
+mongoose.connection.on('connected', () => {
+    console.log('Mongoose is connected!!!!');
+});
+
+// Data parsing
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
-mongoose.connect(process.env.ATLAS_URI, {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useUnifiedTopology: true
-});
-const connection = mongoose.connection;
-connection.once("open", () => {
-  console.log("MongoDB database connection established successfully");
-});
-
-const usersRouter = require("./server/routes/users");
-app.use("/users", usersRouter);
-const teacherRouter=require("./server/routes/teacher");
-app.use("/teacher",teacherRouter);
-const gradeRouter=require("./server/routes/grade");
-app.use("/grades",gradeRouter);
-const rateRouter=require("./server/routes/rate");
-app.use("/rates",rateRouter);
-const studentsInGradeRouter=require("./server/routes/studentsInGrade");
-app.use("/studentsInGrade",studentsInGradeRouter);
-const subjectRouter=require("./server/routes/subject");
-app.use("/subject",subjectRouter);
-const classRouter=require("./server/routes/subjectClass");
-app.use("/class",classRouter);
-const authentication = require("./server/routes/authentication");
-app.use("/auth", authentication);
-const schoolYearRouter = require("./server/routes/schoolYear");
-app.use("/schoolYears", schoolYearRouter);
-const categoryRouter = require("./server/routes/category");
-app.use("/category", categoryRouter);
+// Step 3
 
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('build'));
+    app.use(express.static('client/build'));
 }
-const port = 5000;
 
-app.listen(port, () => `Server running on port ${port}`);
-module.exports = app;
+
+// HTTP request logger
+app.use(morgan('tiny'));
+app.use('/api', routes);
+
+
+
+
+app.listen(PORT, console.log(`Server is starting at ${PORT}`));
