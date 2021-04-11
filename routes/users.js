@@ -83,6 +83,8 @@ router.route("/edit/:id").put((req, res) => {
     .then(user => {
       user.username = req.body.username;
       user.password = req.body.password;
+        user.phone = req.body.phone;
+        user.email = req.body.email;
       user.schoolYears.push(req.body.year);
       user.date = Date.parse(req.body.date);
       user

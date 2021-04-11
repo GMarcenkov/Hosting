@@ -3,8 +3,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const morgan = require('morgan');
 const serverless = require("serverless-http");
-const socketio = require('socket.io');
-const http = require('http');
+
 
 require("dotenv").config();
 
@@ -58,54 +57,14 @@ app.use("/.netlify/functions/api/v1/category", categoryRouter);
 
 
 
-const { addUser, removeUser, getUser, getUsersInRoom } = require('../routes/chat');
 
 
-const server = http.createServer(app);
-let io = socketio.listen(server, { serveClient: false });
 
 
-app.use(cors());
 
 
-io.on('connect', (socket) => {
-    socket.on('join', ({ name, room }, callback) => {
-        const { error, user } = addUser({ id: socket.id, name:`${name.name} ${name.familyName}`,nameId:name._id, room });
-
-        if(error) return callback(error);
-
-        socket.join(user.room);
-
-        socket.emit('message', { user: 'чат', text: `${user.name}, вие сте на линия.`});
-        socket.broadcast.to(user.room).emit('message', { user: 'admin', text: `${user.name} has joined!` });
-
-        io.to(user.room).emit('roomData', { room: user.room, users: getUsersInRoom(user.room) });
-
-        callback();
-    });
-
-    socket.on('sendMessage', (message, callback) => {
-        const user = getUser(socket.id);
-
-        io.to(user.room).emit('message', { user: user.name, text: message ,nameId:user.nameId});
-
-        callback();
-    });
-
-    socket.on('disconnect', () => {
-        const user = removeUser(socket.id);
-
-        if(user) {
-            io.to(user.room).emit('message', { user: 'Admin', text: `${user.name} has left.` });
-            io.to(user.room).emit('roomData', { room: user.room, users: getUsersInRoom(user.room)});
-        }
-    })
-});
-
-
-server.listen(PORT, console.log(`Server is starting at ${PORT}`));
-// module.exports = app;
-// module.exports.handler = serverless(app);
+module.exports = app;
+module.exports.handler = serverless(app);
 
 
 
