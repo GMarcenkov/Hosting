@@ -12,7 +12,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = process.env.PORT || 5000;
+
 
 mongoose.connect(process.env.ATLAS_URI, {
     useNewUrlParser: true,
@@ -28,9 +28,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 
-// if (process.env.NODE_ENV === 'production') {
-//     app.use(express.static('client/build'));
-// }
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
+}
 
 
 app.use(morgan('tiny'));
@@ -56,15 +56,11 @@ const categoryRouter = require("../routes/category");
 app.use("/.netlify/functions/api/v1/category", categoryRouter);
 
 
-app.listen(PORT, () => {
+
+app.listen(5000, () => {
     // eslint-disable-next-line no-console
-    console.log("server on port 5000");
+    console.log('server on port 5000');
   });
-
-
-
-
-
 
 // module.exports = app;
 // module.exports.handler = serverless(app);
