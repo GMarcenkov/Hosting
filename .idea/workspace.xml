@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a006cdaf-cc6a-449b-99f7-e78ccaa2e9e2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +23,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Projects/exo.bg" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -61,13 +64,37 @@
       <workItem from="1602595768204" duration="14506000" />
       <workItem from="1602690098845" duration="394000" />
       <workItem from="1603564346674" duration="666000" />
-      <workItem from="1618142123788" duration="392000" />
-      <workItem from="1619088318639" duration="599000" />
-      <workItem from="1619607474105" duration="27000" />
+      <workItem from="1618142123788" duration="210000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1602514072571">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1602514072571" />
+    <state width="1830" height="248" key="GridCell.Tab.0.bottom" timestamp="1602606293671">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="248" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1602606293671" />
+    <state width="1830" height="248" key="GridCell.Tab.0.center" timestamp="1602606293671">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="248" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1602606293671" />
+    <state width="1830" height="248" key="GridCell.Tab.0.left" timestamp="1602606293671">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="248" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1602606293671" />
+    <state width="1830" height="248" key="GridCell.Tab.0.right" timestamp="1602606293671">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="248" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1602606293671" />
+    <state x="718" y="466" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602605641207">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="718" y="466" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1602605641207" />
   </component>
 </project>
